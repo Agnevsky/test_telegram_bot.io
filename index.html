@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 блока в матрице</title>
+<style>
+    .container {
+        width: 50px;
+        margin: 1 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2px;
+    }
+
+    .block {
+        padding: 20px;
+        text-align: center;
+        height: 200px;
+        word-wrap: break-word;
+        overflow: hidden;
+        /* border: 2px solid black; */
+    }
+
+    .block:nth-child(1) {
+        background-color: lightblue;
+        color: black;
+    }
+
+    /* Стили для кнопки */
+    button {
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <button type="submit"><div class="block">Меню</div></button>
+            <button type="submit"><div class="block">Кальянная карта</div></button>
+            <button type="submit"><div class="block">Связь с кальянщиком</div></button>
+            <button type="submit"><div class="block">Бронирование столов</div></button>
+        </div>
+    </form>
+</body>
+</html>
